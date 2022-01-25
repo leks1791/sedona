@@ -16,7 +16,7 @@
       <div class="nav__wrapper">
         <ul class="nav__list">
           <li class="nav__item "><a href="index.html">Главная</a></li>
-          <li class="nav__item"><a href="#">Фото и видео</a></li>
+          <li class="nav__item"><a href="catalog.html">Фото и видео</a></li>
           <li class="nav__item nav__item--current"><a>Форма отзыва</a></li>
           <li class="nav__item"><a href="#">HTML ACADEMY</a></li>
         </ul>
@@ -31,10 +31,10 @@
     <p class="main__desc">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
       достопримечательностях</p>
 
-    <form action="https://echo.htmlacademy.ru/courses" method="post">
+    <form class="form-review" action="https://echo.htmlacademy.ru/courses" method="post">
 
-      <fieldset>
-        <legend>Представьтесь</legend>
+      <fieldset class="form-review__group ">
+        <legend class="form-review__title">Представьтесь</legend>
         <label for="first-name">Имя*:</label>
         <input type="text" name="first-name" placeholder="Петр">
         <label for="last-name">Фамилия*:</label>
@@ -44,7 +44,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Контактная информация</legend>
+        <legend class="form-review__title">Контактная информация</legend>
         <label for="phone">Контактный телефон*:</label>
         <input type="tel" name="phone" placeholder="Введите телефон">
         <label for="email">Электронная почта*:</label>
@@ -52,7 +52,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>ВАше Общее впечатление:</legend>
+        <legend class="form-review__title">ВАше Общее впечатление:</legend>
         <label>
           <input type="radio" name="impression" value="positive">Положительное
         </label>
@@ -65,7 +65,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Посещенные достопримечательности:</legend>
+        <legend class="form-review__title">Посещенные достопримечательности:</legend>
         <label><input type="checkbox" name="devils-bridge" id="devils-bridge" checked>Мост Дьявола</label>
         <label><input type="checkbox" name="mount-bell" id="mount-bell" checked>Гора-Колокол</label>
         <label><input type="checkbox" name="slide-park" id="slide-park" checked>Слайд-парк</label>
@@ -73,12 +73,12 @@
       </fieldset>
 
       <fieldset>
-        <legend>Опишите свои эмоции:</legend>
+        <legend class="form-review__title">Опишите свои эмоции:</legend>
         <textarea name="describe-delight" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги "></textarea>
       </fieldset>
 
-      <button class="button" type="submit">Отправить отзыв</button>
+      <button class="form-review__button button" type="submit">Отправить отзыв</button>
     </form>
 
   </main>
