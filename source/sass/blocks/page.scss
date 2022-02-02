@@ -4,3 +4,10 @@
   font-size: 14px;
   line-height: 21px;
 }
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  color: $dark-grey;
+}
