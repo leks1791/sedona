@@ -3,21 +3,25 @@
   list-style: none;
 }
 
-.reason{
+.reason {
   background-color: $white;
   text-align: center;
   color: $black;
 }
+
 .reason--blue {
   background-color: $accent;
   color: $white;
 }
+
 .reason--gray {
   background-color: $light-grey;
 }
+
 .reason--gray:not(:last-child) {
   border-bottom: 1px solid $grey;
 }
+
 .reason__title {
   font-size: 18px;
   line-height: 26px;
@@ -25,10 +29,12 @@
   font-weight: 700;
   margin: 0;
 }
+
 .reason__descr {
   text-transform: uppercase;
   margin: 0;
 }
+
 .reason__list {
   list-style: none;
   padding: 0;

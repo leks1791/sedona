@@ -2,10 +2,12 @@
   position: relative;
   min-width: 320px;
 }
+
 .header__top {
   background-color: $white;
   height: 56px;
 }
+
 .header__logo {
   position: absolute;
   top: 0;
@@ -15,13 +17,13 @@
 
 .header__intro {
   height: 389px;
-  background: url('../img/mobile/back-mobile.jpg') 0 0/cover no-repeat;
+  background: url("../img/mobile/back-mobile.jpg") 0 0/cover no-repeat;
   padding: 90px 20px 85px;
 
-  @media (min-width:768px) {
+  @media (min-width: 768px) {
     height: 518px;
     padding-top: 77px;
-    background: url('../img/desktop/back-desktop.jpg') 0 0/cover no-repeat;
+    background: url("../img/desktop/back-desktop.jpg") 0 0/cover no-repeat;
   }
 }
 
@@ -29,7 +31,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  @media (min-width:768px) {
+
+  @media (min-width: 768px) {
     height: 350px;
   }
 }
