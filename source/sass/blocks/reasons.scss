@@ -1,12 +1,18 @@
 .reasons__list {
   padding: 0;
   list-style: none;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   }
 }
 
 .reasons__row {
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column: 1/-1;
   }
 }
 
