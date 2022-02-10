@@ -27,6 +27,16 @@
   }
 }
 
+.header__intro--inner {
+  background: url("../img/mobile/back-mobile-inner.jpg") center bottom/cover no-repeat;
+  height: 155px;
+
+  @media (min-width: 768px) {
+    height: 346px;
+    background: url("../img/desktop/back-desktop.jpg") 0 bottom/cover no-repeat;
+  }
+}
+
 .header__image {
   display: block;
   margin-left: auto;

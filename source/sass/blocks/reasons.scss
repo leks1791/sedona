@@ -3,6 +3,13 @@
   list-style: none;
 }
 
+.reasons__row {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .reason {
   background-color: $white;
   text-align: center;
@@ -12,6 +19,14 @@
 .reason--blue {
   background-color: $accent;
   color: $white;
+}
+
+.reason--picture {
+  max-height: 256px;
+
+  @media (min-width: 768px) {
+   grid-column: span 2;
+  }
 }
 
 .reason--gray {
