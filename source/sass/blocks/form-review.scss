@@ -1,6 +1,9 @@
 .form-review {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  @media (min-width: 768px) {
+   grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .form-review__group {

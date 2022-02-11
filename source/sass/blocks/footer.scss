@@ -1,3 +1,11 @@
+.footer {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   }
+}
+
 .footer__hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -6,6 +14,7 @@
   color: $black;
   text-align: center;
 }
+
 .footer__social-list {
   padding: 0;
   list-style: none;
@@ -32,6 +41,7 @@
 .footer__logo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .footer__text-logo {

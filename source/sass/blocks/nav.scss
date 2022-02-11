@@ -1,6 +1,62 @@
+.nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
+.nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 23px;
+  height: 4px;
+  background-color:  $accent;
+  box-shadow: 0 8px 0 0  $accent, 0 16px 0 0 $accent;
+}
+
+.nav__toggle {
+  z-index: 2;
+  display: block;
+  width: 23px;
+  height: 22px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+
 .nav__toggle {
   @media (min-width: 768px) {
     display: none;
+  }
+}
+
+.nav--opened .nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 7px;
+    width: 4px;
+    height: 28px;
+    background-color: $white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#ffffff, 30%);
   }
 }
 
@@ -10,6 +66,11 @@
   list-style: none;
   min-height: 56px;
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
 
   @media (min-width: 768px) {
     display: flex;
@@ -21,7 +82,7 @@
 .nav__item {
   background-color: $accent;
   color: $white;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2),
+  box-shadow: 0 -1px 0 rgba(1, 1, 1, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   font-size: 16px;
   line-height: 40px;
