@@ -142,6 +142,22 @@
       </div>
     </footer>
   </div>
+  <script>
+
+    burger = document.querySelector('.nav__toggle');
+    menu = document.querySelector('.nav')
+
+    burger.addEventListener('click', () => {
+
+      if (menu.classList.contains('nav--closed')) {
+        menu.classList.remove('nav--closed');
+        menu.classList.add('nav--opened');
+      } else {
+        menu.classList.add('nav--closed');
+        menu.classList.remove('nav--opened');
+      }
+    })
+  </script>
 </body>
 
 </html>

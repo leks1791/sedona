@@ -71,13 +71,23 @@
   left: 0;
   width: 100%;
 
-
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
+
+@media (max-width: 767px) {
+  .nav--opened .nav__list {
+    display: block;
+  }
+
+  .nav--closed .nav__list {
+    display: none;
+  }
+}
+
 
 .nav__item {
   background-color: $accent;
