@@ -1,0 +1,61 @@
+.form-group {
+  border: none;
+  padding: 0;
+}
+
+.form-group__title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+}
+
+.form-group  label {
+  text-transform: uppercase;
+}
+
+.form-group input {
+  text-transform: uppercase;
+  width: 100%;
+  height: 58px;
+  background-color: #F2F2F2;
+  border: none;
+
+  &::placeholder {
+    color: $black;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.form-group div {
+  display: flex;
+  align-items: center;
+}
+
+.form-group--radio {
+
+  @media (min-width: 768px) {
+    order: -1;
+   }
+}
+
+.form-group--contact {
+  @media (min-width: 768px) {
+    grid-column: span 2;
+   }
+}
+
+.form-group--checkbox {
+  @media (min-width: 768px) {
+    grid-column: span 2;
+   }
+}
+
+.form-group--desribe {
+  @media (min-width: 768px) {
+    grid-column: span 2;
+   }
+}
